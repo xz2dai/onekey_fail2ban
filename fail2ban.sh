@@ -4,8 +4,6 @@
 sudo apt update
 sudo apt install fail2ban -y
 
-# 备份原始配置文件
-sudo cp /etc/fail2ban/jail.local /etc/fail2ban/jail.local.bak
 
 # 写入 sshd 配置到 jail.local
 sudo bash -c 'cat <<EOF >> /etc/fail2ban/jail.local
