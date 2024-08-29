@@ -20,4 +20,4 @@ EOF'
 systemctl restart fail2ban.service
 
 # 查看 fail2ban 状态
-sudo fail2ban status sshd
+sudo fail2ban-client status sshd
