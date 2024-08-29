@@ -17,7 +17,7 @@ maxretry = 3
 EOF'
 
 # 重启 fail2ban 服务
-sudo systemctl restart fail2ban
+systemctl restart fail2ban.service
 
 # 查看 fail2ban 状态
 sudo fail2ban status sshd
